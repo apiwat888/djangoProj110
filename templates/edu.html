@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% load static %}
+
+
+    <div class="container mt-5" xmlns="http://www.w3.org/1999/html">
+        <div class="row">
+            <div class="col-sm-4">
+                <center><h1>EDUCATION</h1></center>
+                <div class="container mt-3">
+                    <center><img src="{% static 'images/e.jpg' %}" class="img-thumbnail" alt="Cinque Terre" width="200"
+                                 height="200"></center>
+                </div>
+
+            </div>
+            <div class="col-sm-8">
+                <h1 style="background-color:DodgerBlue;">ประวัติการศึกษา</h1>
+                <div class="container mt-3">
+
+                    <table class="table table-secondary">
+                        <thead class="table-dark">
+                        <tr>
+                            <th><h4>โรงเรียน</h4></th>
+                            <th><h4>ระดับการศึกษา</h4></th>
+                            <th><h4>เกรดเฉลี่ย GPAX</h4></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><img src="{% static 'images/s1.png' %}" class="rounded-circle " width="70px"
+                                     height="70"></td>
+                            <td><h5>ประถมศึกษา</h5></td>
+                            <td><h5>3.25</h5></td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/s1.png' %}" class="rounded-circle " width="70px"
+                                     height="70"></td>
+                            <td><h5>มัธยมศึกษา 1-6</h5></td>
+                            <td><h5>3.90</h5></td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="{% static 'images/tec.png' %}" class="rounded-circle " width="70px"
+                                     height="70"></td>
+                            <td><h5>ระดับประกาษณียบัตรวิชาชีพขั้นสูง</h5></td>
+                            <td><h5>3.81</h5></td>
+                        </tr>
+                        <tr>
+                            <td><img src="{% static 'images/u.png' %}" class=" " width="70px" height="120"></td>
+                            <td><h5>ระดับปริญญาตรี</h5></td>
+                            <td><h5>กำลังศึกษา</h5></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

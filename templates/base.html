@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href={% static 'stylesheet/bt523/css/bootstrap.css' %}>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,0"/>
+    <script src="../static/stylesheet/bt523/js/bootstrap.js"></script>
+
+
+</head>
+<body>
+<style type="text/css">
+    body {
+        font-family: 'IBM Plex Sans Thai', sans-serif;
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12 bg-primary">
+            {% include 'head.html' %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3 bg-white text-dark">
+            {% include 'manu.html' %}
+        </div>
+        <div class="col-lg-9 bg-secondary text-white">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </div>
+</div>
+</body>
+</html>
