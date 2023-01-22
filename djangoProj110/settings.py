@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Exapp.apps.ExappConfig',
-    'Profileapp.apps.ProfileappConfig'
+    'Profileapp.apps.ProfileappConfig',
+    'fontawesome_6'
 ]
 
 MIDDLEWARE = [
