@@ -1,6 +1,6 @@
 
+from django.shortcuts import render, HttpResponse, redirect
 
-from django.shortcuts import render, HttpResponse
 
 
 # Create your views here.
@@ -52,3 +52,21 @@ def showdata(request):
                'height': height, 'colors': colors, 'food': food, 'work': work,
                'products': products}
     return render(request, "showdata.html", context)
+
+
+    #from Profileapp.models import*
+    #ProductList = []
+    #def showproduct(request):
+
+        #product = Product('P0001','Mouse', 'Acer', 500.00, 120)
+        #ProductList.append(product)
+        #product = Product('P0002', 'keybord', 'Okey', 1500.00, 100)
+        #ProductList.append(product)
+        #product = Product('P0003', 'Notebook', 'Lenovo', 3500.00, 50)
+        #ProductList.append(product)
+        #product = Product('P0004', 'Personal Computer', 'HP', 4500.00, 200)
+        #ProductList.append(product)
+        #product = Product('P0005', 'Scanner', 'Epson', 1500.00, 100)
+        #ProductList.append(product)
+        #context = {'product':ProductList}
+        #return render(request,"showpro.html",context)
